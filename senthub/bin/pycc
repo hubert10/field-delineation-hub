@@ -1,0 +1,3 @@
+#!/home/hubert/Desktop/Heuristics/RS/field-delineation-hub/senthub/bin/python3
+from numba.pycc import main
+main()
