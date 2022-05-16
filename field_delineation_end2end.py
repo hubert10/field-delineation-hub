@@ -74,13 +74,13 @@ The procedure assumes access to a AWS S3 bucket from which it loads and stores d
 """
 
 # BUCKET_NAME='sh.tpdi.byoc.eu-central-1'
-BUCKET_NAME = "plot-delineation"
-AWS_ACCESS_KEY_ID = "AKIAYSXJKR66SEUQSAE3"
-AWS_SECRET_ACCESS_KEY = "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"
-AWS_REGION = "eu-central-1"
-SH_INSTANCE_ID = "855c5213-5411-424b-b938-9bd99a281891"
-SH_CLIENT_ID = "8322cd5a-4d97-4006-b8e8-539dab0fa62f"
-SH_CLIENT_SECRET = "3#mCjtm^t2hE+wl0!awnIpH]Q%zf}D#+v46KS?as"
+BUCKET_NAME = ""
+AWS_ACCESS_KEY_ID = ""
+AWS_SECRET_ACCESS_KEY = ""
+AWS_REGION = ""
+SH_INSTANCE_ID = ""
+SH_CLIENT_ID = ""
+SH_CLIENT_SECRET = ""
 
 sh_config = SHConfig()
 
@@ -104,13 +104,9 @@ filesystem = prepare_filesystem(base_config)
 PROJECT_DATA_ROOT = (
     PROJECT_ROOT + "input-data/"
 )  # !! Local folder where project related  files are/will be stored !!
-# INPUT_AOI_FILEPATH = os.path.join(PROJECT_DATA_ROOT, 'Debi-Tiguet_v5_clean.geojson')
-INPUT_AOI_FILEPATH = os.path.join(PROJECT_DATA_ROOT, "koutiala_region.geojson")
-GRID_PATH = os.path.join(PROJECT_DATA_ROOT, "koutiala-grid-definition-20.gpkg")
-# PROJECT_DATA_ROOT = PROJECT_ROOT + 'input-data/' # !! Local folder where project related  files are/will be stored !!
-# INPUT_AOI_FILEPATH = os.path.join(PROJECT_DATA_ROOT, 'Debi-Tiguet_v5_clean.geojson')
-# # INPUT_AOI_FILEPATH = os.path.join(PROJECT_DATA_ROOT, 'lithuania-border.geojson')
-# GRID_PATH = os.path.join(PROJECT_DATA_ROOT, 'grid.gpkg')
+INPUT_AOI_FILEPATH = os.path.join(PROJECT_DATA_ROOT, "region.geojson")
+GRID_PATH = os.path.join(PROJECT_DATA_ROOT, "20.gpkg")
+
 
 TIME_INTERVAL = [
     "2021-01-01",
