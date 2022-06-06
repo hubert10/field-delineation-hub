@@ -61,7 +61,6 @@ daft==0.0.4
 dask==2.12.0
 dataclasses==0.6
 dataclasses-json==0.5.7
-datascience==0.10.6
 debugpy==1.0.0
 decorator==4.4.2
 defusedxml==0.7.1
