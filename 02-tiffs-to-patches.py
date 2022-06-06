@@ -73,6 +73,13 @@ logging.getLogger().setLevel(logging.ERROR)
 The procedure assumes access to a AWS S3 bucket from which it loads and stores data.
 """
 
+BUCKET_NAME = ""
+AWS_ACCESS_KEY_ID=''
+AWS_SECRET_ACCESS_KEY=''
+AWS_REGION = "eu-central-1"
+SH_INSTANCE_ID = ""
+SH_CLIENT_ID = ""
+SH_CLIENT_SECRET = ""
 
 sh_config = SHConfig()
 
